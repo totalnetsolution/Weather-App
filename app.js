@@ -20,3 +20,8 @@ async function getWeatherData(city) {
     alert('Please put correct name of city and try again.');
   }
 }
+
+function displayWeatherCard(data) {
+  const weatherCard = document.createElement('div');
+  weatherCard.classList.add('col-md-4', 'mb-4');
+  weatherCard.innerHTML = `
